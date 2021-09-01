@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}文章: {{ article.title }}{% endblock %}
+
+{% block content %}
+
+<!--<div class="row text-center vertical-middle-sm">-->
+<!--    <h1>{{ article.title }}</h1>-->
+<!--</div>-->
+
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <div class="text-center">
+            <h2>{{ article.title }}</h2>
+        </div>
+        <p class="text-center">
+            <span>{{ article.author.username }}</span>
+            <span style="margin-left: 20px;">{{ publish }}</span>
+        </p>
+        <div>{{ article.body }}</div>
+
+
+    </div>
+
+    <div class="col-xs-6 col-md-4">
+        <h2>侧边栏</h2>
+        <p>推荐以下内容</p>
+        <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcdn2.ettoday.net%2Fimages%2F3259%2Fd3259025.jpg&refer=http%3A%2F%2Fcdn2.ettoday.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1633070929&t=b737a8f2d9a933d9514d131bff097205" alt="" width="200px">
+    </div>
+</div>
+
+{% endblock %}
+
+{% block javascript %}
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+{% endblock %}

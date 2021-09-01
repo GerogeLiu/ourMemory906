@@ -1,0 +1,19 @@
+{% load static %}
+
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a href="www.jxnu906.com" class="navbar-brand" style="padding: 0">
+                <img src="{% static 'images/logo.png' %}" alt="logo" width="50px">
+            </a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav" role="navigation">
+                <li><a href="{% url 'blog:blog_title' %}">博客</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'account:user_login' %}">登陆</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
