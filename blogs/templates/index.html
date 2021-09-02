@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}首页{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Welcome, Room 906</h1>
+  <p>我们毕业于江西师范大学，我们是在2009年入学，2013年毕业。我们6人都在化学化工学院，专业涵盖材料化学、应用化学和化学教育。</p>
+  <p>寝室编号906，我们一行6人。大学时代我们曾有过很难忘的青春记忆。这些记忆使我们一生的宝贵财富。现在离校近10年的我们已经是而立之年。
+      我们之间的情谊依然深厚，为继续守护这份情谊、这份记忆，我们创建了这个网站</p>
+  <p>致敬青春，感恩生命，砥砺前行</p>
+  <p><a class="btn btn-primary btn-lg" href="{% url 'aboutus:main' %}" role="button">关于我们</a></p>
+</div>
+
+{% endblock %}

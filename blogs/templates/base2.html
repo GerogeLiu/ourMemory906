@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+    <style>
+        .nav{
+            width: 1000px;
+            height: 48px;
+            background-color: #e8e7e3;
+            margin: 100px auto;
+        }
+
+        .nav ol{
+
+            float: left;
+            height: 48px;
+            line-height: 48px;
+        }
+
+        .nav a{
+            display: block;
+            text-decoration: none;
+            color: #777777;
+            font-size: 18px;
+            padding: 0 20px;
+        }
+
+        .nav a:hover{
+            background-color: #3f3f3f;
+        }
+
+        .body{
+            width: 1000px;
+            margin: auto;
+        }
+
+        .img2{
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <ol><a href="{% url 'aboutus:main' %}">主页</a></ol>
+
+        <ol><a href="/aboutus/Tan">谭老板</a></ol>
+        <ol><a href="/aboutus/Liu">刘组长</a></ol>
+        <ol><a href="/aboutus/Qiu">邱师傅</a></ol>
+        <ol><a href="/aboutus/Guo">郭老师</a></ol>
+        <ol><a href="/aboutus/mengzhu">盟主</a></ol>
+        <ol><a href="/aboutus/bosi">博士</a></ol>
+
+    </ul>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    {% include "footer.html" %}
+
+    {% block javascript %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>906</title>
+    <style>
+        .nav{
+            width: 1000px;
+            height: 48px;
+            background-color: #e8e7e3;
+            margin: 100px auto;
+        }
+
+        .nav ol{
+
+            float: left;
+            height: 48px;
+            line-height: 48px;
+        }
+
+        .nav a{
+            display: block;
+            text-decoration: none;
+            color: #777777;
+            font-size: 18px;
+            padding: 0 20px;
+        }
+
+        .nav a:hover{
+            background-color: #3f3f3f;
+        }
+
+        .body{
+            width: 1000px;
+            margin: auto;
+        }
+
+        .img2{
+            width: 800px;
+        }
+    </style>
+
+</head>
+<body>
+    <ul class="nav">
+        <ol><a href="./aboutus.html">主页</a></ol>
+        <ol><a href="detail/Tan.html">谭老板</a></ol>
+        <ol><a href="detail/Liu.html">刘组长</a></ol>
+        <ol><a href="detail/Qiu.html">邱师傅</a></ol>
+        <ol><a href="detail/Guo.html">郭老师</a></ol>
+        <ol><a href="detail/Wu.html">盟主</a></ol>
+        <ol><a href="detail/bosi.html">博士</a></ol>
+        
+    </ul>
+    <div class="body">
+        <h1 class="h">欢迎来参观我们寝室</h1>
+        <p class="p">我们毕业于江西师范大学，我们是在2009年入学，2013年毕业。我们6人都在化学化工学院，专业涵盖材料化学、应用化学和化学教育。</p>
+        <p class="p">我们的寝室叫906寝室，我们一共有6个人。我们6个人一起有过很难忘的青春记忆。这些记忆使我们一生的宝贵财富。我们现在年龄都在30左右，而立之年。距离2013年我们大学毕业已经有8年了。我们之间的情谊依然深厚，我们想继续守护这份情谊，这份记忆。因此我们创建了这个网站</p>
+        <img class="img1" src="{% static 'images/us/1.jpg' %}" alt="">
+        <img class="img2" src="{% static 'images/us/2.jpg' %}" alt="">
+    </div>
+
+</body>
+</html>

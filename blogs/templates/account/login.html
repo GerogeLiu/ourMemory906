@@ -10,6 +10,9 @@
     <form action="." class="form-horizontal" method="post">
         {% csrf_token %}
         {{ form.as_p }}
+        {% if error %}
+        <p style='color:orangered'>{{ error }}</p>
+        {% endif %}
         <input type="submit" value="登陆">
     </form>
 </div>
